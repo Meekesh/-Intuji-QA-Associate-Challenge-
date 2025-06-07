@@ -51,3 +51,12 @@ cy.get('a[data-qa="continue-button"]').click();
 cy.contains(`Logged in as ${user.name}`).should('be.visible');
   });
 });
+
+Cypress.Commands.add('enterFakePaymentDetailsAndSubmit', () => {
+cy.get('input[name="name_on_card"]').type('Faker User');
+  cy.get('input[name="card_number"]').type('4000000000000002');
+  cy.get('input[name="cvc"]').clear().type('123');
+  cy.get('input[name="expiry_month"]').type('12');
+  cy.get('input[name="expiry_year"]').type('2030');
+  cy.get('#submit').click();
+});
