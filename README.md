@@ -13,7 +13,7 @@
 5. After clicking button, It opens chrome browser.
 6. Search for the file and click it (e.g. login.cs.js).
 
-#Tools/Pulgins used
+# Tools/Pulgins used
 1. Faker - Used to generate dynamic test data for registration, such as name,email,address,payment etc.
 2. Cypress - End to end testing framework used to writing and running tests.
 3. command.js 
