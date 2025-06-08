@@ -19,3 +19,7 @@
 3. command.js 
       i) cy.registerUser() - Registers a new user with fake generated data
       ii) cy.enterFakePaymentDetailsAndSubmit() - Fills fake card details and submits the payment
+
+# Limitations
+1. The website is very slow to render and laggy, which often causes timeout errors (e.g., 6000ms) during the automation process.
+2. In the cart, if the quantity is updated to 3 from the product detail page, it shows as 4 in the cart because the previous quantity is added. Additionally, there is no option to decrease the quantity.
